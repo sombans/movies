@@ -15,10 +15,8 @@ use App\Http\Controllers\Controller;
 
 Route::get('/movies', ['as' => 'all-movies', 'uses' => 'MoviesController@index']);
 
+Route::get('/movies/create', ['as' => 'create-muvie', 'uses' => 'MoviesController@create']);
+
+Route::post('/movies/store', ['as' => 'store-muvie', 'uses' => 'MoviesController@store']);
+
 Route::get('/movies/{id}', ['as' => 'single-muvies', 'uses' => 'MoviesController@show']);
-
-// Route::post('/posts/store', ['as' => 'store-post', 'uses' => 'MoviesController@store']);
-
-// Route::get('/posts/create', ['as' => 'create-post', 'uses' => 'MoviesController@create']);
-
-// Route::post('/posts/{postId}/comments', ['as' => 'comment-post', 'uses' => 'CommentController@store']);
