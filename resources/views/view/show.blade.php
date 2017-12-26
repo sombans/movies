@@ -9,7 +9,8 @@
   <h1 class="display-5"><li> Name of movie: {{$movie->title}}</li></h1>
   <p class="lead">
     
-    <li> Movie Genre : {{$movie->genre}}</li>
+     
+    <li> Movie Genre : <a href="/genres/{{ $movie->genre }}">{{ $movie->genre }}</a></li>
     <li> Director : {{$movie->director}}</li>
     <li> Produced in {{$movie->year}}</li>
     <li> Storyline:  {{$movie->storyline}}</li>

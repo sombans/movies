@@ -50,5 +50,6 @@ class MoviesController extends Controller
         return redirect()->route('all-movies');
 
     }
+    
 
 }
